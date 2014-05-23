@@ -1,34 +1,34 @@
-#Coin flip program
-#Describe the purpose of this program here.
+#Die roll task
+import random,time
+d1 = "- - - - -\n|       |\n|   O   |\n|       |\n- - - - -\n"
+d2 = "- - - - -\n| O     |\n|       |\n|     O |\n- - - - -\n"
+d3 = "- - - - -\n| O     |\n|   O   |\n|     O |\n- - - - -\n"
+d4 = "- - - - -\n| O   O |\n|       |\n| O   O |\n- - - - -\n"
+d5 = "- - - - -\n| O   O |\n|   O   |\n| O   O |\n- - - - -\n"
+d6 = "- - - - -\n| O   O |\n| O   O |\n| O   O |\n- - - - -\n"
 
-inport random;time
+def rollDice():
+    print("rolling.....")
+    time.sleep(0.5)
+    roll = random.randint(1,6)
+    return roll
 
-s1 = "- - - - -\n|       |\n|   O   |\n|       |\n- - - - -\n"
-s2 = "- - - - -\n| O     |\n|       |\n|     O |\n- - - - -\n"
-s3 = "- - - - -\n| O     |\n|   O   |\n|     O |\n- - - - -\n"
-s4 = "- - - - -\n| O   O |\n|       |\n| O   O |\n- - - - -\n"
-s5 = "- - - - -\n| O   O |\n|   O   |\n| O   O |\n- - - - -\n"
-s6 = "- - - - -\n| O   O |\n| O   O |\n| O   O |\n- - - - -\n"
+def showDice(roll):
+    if roll == 1:
+        print(d1)
+    elif roll == 2:
+        print(d2)
+    elif roll == 3:
+        print(d3)
+    elif roll == 4:
+        print(d4)
+    elif roll == 5:
+        print(d5)
+    else:
+        print(d6)
 
-def roll():
-    Print("rolling....."
-    roll = rand.randing(7)
-
-
-def show_dice(roll)
-    if roll = 1:
-        print(S1)
-    else roll = 2
-        print(s2)
-    else roll = 3
-        print(s3)
-    else roll = 4
-        print(s4)
-    else roll = 5
-        print(s5)
-    else roll = 6
-        print(s6)
-
-roll
-time.sleep(1)
-show_dice(roll)
+roll=rollDice()
+showDice(roll)
+#This program uses if staements and functions and variables to execute the task
+#This i believe is the most efficient way of doing the set task.
+#Enjoy :)
